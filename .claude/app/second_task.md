@@ -1,0 +1,10 @@
+- Setting functionality:
+    - The setting button must redirect to setting screen, design reference: @.claude/app/resources/setting_screen.png
+        - Don’t create the notifications switch
+    - Duration switch option:
+        - Should show:
+            - Focus session
+            - Short break
+            - Long break
+        - Every option must show the time set by the user front each title and after the time show a > icon tho redirect to the next screen what is:
+            - Set times screen: @.claude/app/resources/edit_times.png

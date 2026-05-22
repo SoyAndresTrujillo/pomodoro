@@ -18,5 +18,32 @@
       "reset": "Reset",
       "settings": "Settings"
     }
+  },
+  "settings": {
+    "title": "Settings",
+    "tab": {
+      "duration": "Duration"
+    },
+    "row": {
+      "focusSession": "Focus Session",
+      "shortBreak": "Short break",
+      "longBreak": "Long break",
+      "longBreakAfter": "Long break after"
+    },
+    "unit": {
+      "min": "min",
+      "sessions": "Sess."
+    },
+    "aria": {
+      "close": "Close settings",
+      "edit": "Edit"
+    }
+  },
+  "edit": {
+    "aria": {
+      "back": "Back",
+      "decrement": "Decrease",
+      "increment": "Increase"
+    }
   }
 }

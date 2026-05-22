@@ -53,7 +53,7 @@ Sections:
     - Close buttons
         - X
         
-inspiration design: @.claude/app/design_inpiration.webp
+inspiration design: @.claude/app/resources/design_inpiration.webp
 
 Your task in help to set-up and create the project with the next criterias
 V1:
