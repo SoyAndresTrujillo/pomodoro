@@ -1,0 +1,22 @@
+{
+  "app": {
+    "title": "Pomodoro Timer",
+    "description": "Focus deeply. Rest fully."
+  },
+  "timer": {
+    "label": {
+      "focus": "Focus",
+      "shortBreak": "Short Break",
+      "longBreak": "Long Break"
+    },
+    "button": {
+      "start": "START",
+      "pause": "PAUSE",
+      "resume": "RESUME"
+    },
+    "aria": {
+      "reset": "Reset",
+      "settings": "Settings"
+    }
+  }
+}

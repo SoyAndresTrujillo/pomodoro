@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #0d0d0d;
+  --text: #f1f1f1;
+  --muted: #6b6b6b;
+  --surface: #161616;
+  --surface-2: #1c1c1c;
+  --btn: #3e3e3e;
+  --btn-hover: #f24535;
+  --accent: #f24535;
+  --track: #262626;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-btn: var(--btn);
+  --color-btn-hover: var(--btn-hover);
+  --color-track: var(--track);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(1200px 800px at 50% 110%, rgba(242, 69, 53, 0.05), transparent 60%),
+    radial-gradient(900px 600px at 50% -10%, rgba(255, 255, 255, 0.02), transparent 60%),
+    var(--bg);
 }
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.85; }
+}
+
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(12px) scale(0.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes ring-in {
+  from { stroke-dashoffset: 1131; opacity: 0; }
+  to { opacity: 1; }
+}
+
+.tabular { font-variant-numeric: tabular-nums; }
