@@ -82,25 +82,6 @@ export default function Timer() {
           animation: "glow-pulse 6s ease-in-out infinite",
         }}
       />
-      {/* Subtle concentric guide rings (background texture) */}
-      <svg
-        aria-hidden
-        className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.12]"
-        viewBox="0 0 560 560"
-      >
-        {[140, 200, 260].map((r) => (
-          <circle
-            key={r}
-            cx="280"
-            cy="280"
-            r={r}
-            fill="none"
-            stroke="#ffffff"
-            strokeWidth="0.6"
-          />
-        ))}
-      </svg>
-
       {/* Center content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div
